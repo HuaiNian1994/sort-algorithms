@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="sorting.js"></script>
+</head>
+<body>
+	
+</body>
+<script>
+	for(var i=999,arr=[];i>0;i--){
+		arr.push(getRandomInteger(-99999,99999))
+	}
+	
+	
+
+	
+	    	
+	var d=new Date();
+	var beginning=d.getTime();
+	console.log(bubbleSort(arr));
+	console.log("bubbleSort总共耗时："+((new Date()).getTime()-beginning)+"毫秒");    
+
+	var d=new Date();
+	var beginning=d.getTime();
+	console.log(bubbleSortPlus(arr));
+	console.log("bubbleSortPlus总共耗时："+((new Date()).getTime()-beginning)+"毫秒");    	
+
+	var d=new Date();
+	var beginning=d.getTime();
+	console.log(insertSort(arr));
+	console.log("insertSort总共耗时："+((new Date()).getTime()-beginning)+"毫秒");    	
+	
+	    	
+	var d=new Date();
+	var beginning=d.getTime();
+	console.log(quickSort(arr));
+	var duration=((new Date()).getTime()-beginning);
+	console.log("递归quickSort总共耗时："+duration+"毫秒");
+	
+
+	// // var d=new Date();
+	// // var beginning=d.getTime();
+ // //    	console.log(quick_sort(arr));
+ // //    	console.log("非递归quick_sort总共耗时："+((new Date()).getTime()-beginning)+"毫秒");
+
+	
+	
+	var d=new Date();
+	var beginning=d.getTime();
+	console.log(mergeSort(arr))
+	console.log("mergeSort总共耗时："+((new Date()).getTime()-beginning)+"毫秒");
+	
+    	
+
+    	var d=new Date();
+	var beginning=d.getTime();
+    	console.log(shellSort(arr,700));
+    	console.log("shellSort总共耗时："+((new Date()).getTime()-beginning)+"毫秒");
+	    	
+	
+    	
+ //    	var d=new Date();
+	// var beginning=d.getTime();
+ //    	__quickSort(arr);
+ //    	console.log("非递归__quickSort总共耗时："+((new Date()).getTime()-beginning)+"毫秒");
+
+
+    	
+    	var d=new Date();
+	var beginning=d.getTime();
+    	arr.sort((a,b)=>a-b);
+    	console.log(arr);
+    	console.log("原生sort总共耗时："+((new Date()).getTime()-beginning)+"毫秒");
+    	
+ //    	var n=9999;
+ //    	var d=new Date();
+	// var beginning=d.getTime();
+	
+ //    	for(var i=0;i<n;i++){
+ //    		arr.concat(arr,arr)
+ //    	}
+ //    	console.log(n+"次长度为"+arr.length+"字符串拼接总共耗时："+((new Date()).getTime()-beginning)+"毫秒");
+ 	
+ 	// console.log(Math.pow(100000,2)/Math.log(100000)/Math.log(2))
+</script>
+</html>
